@@ -1,0 +1,147 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table
+}
+
+.container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav {
+    width: 100%;    
+    background-color: #0000ff;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {    
+    float: left;
+    height: 70px;
+    list-style-type: none;
+    transition: all 0.3s linear;
+}
+
+nav ul li a {
+    position: relative;
+    display: table-cell;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+    min-width: 140px;
+    max-width: 170px;
+    
+}
+
+nav ul li:hover {
+    color: #fff;
+    opacity: 1;
+    margin-top: -10px;
+    height: 80px;
+}
+
+#bounce-houses:hover .new,
+#bounce-castles:hover .best{
+    color: #fff;
+    opacity: 1;    
+    height: auto;
+}
+
+nav ul .fa {
+  position: absolute;
+  padding: 0px 5px;
+margin-top: 0.2em;
+}
+
+#home {
+    background-color: #f92c2c;
+    border-radius: 6px 0 0 0;
+    width: 14%;
+}
+
+#bounce-houses {
+    background-color: #fe7a10;
+    transition: all 0.3s linear;
+    width: 14%;
+}
+
+#bounce-castles {
+    background-color: #ffb601;
+    width: 14%;
+   
+}
+
+#inflatable {
+    background-color: #79c614;
+    width: 14%;
+}
+
+#about {
+    background-color: #2ab9c6;
+    width: 14%;
+}
+
+#blog {
+    background-color: #1b7ce3;
+    width: 14%;
+}
+
+#contact {
+    background-color: #8b49f9;
+    border-radius: 0 6px 0 0;
+    width: 14%;
+}
+
+.label {
+    position: absolute;
+    font-size: 12px;
+    line-height: 30px;
+    padding: 0 10px;
+    background: #0e3e8c;
+    color: #fff;
+}
+
+.label:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #0e3e8c transparent transparent transparent;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.label.new {
+    background: #f92c2c;
+    left: 34%;
+    top: -30px;
+    transition: all 0.3s linear;
+}
+
+.label.new:before {
+    border-color: #f92c2c transparent transparent transparent;
+}
+
+.label.best {
+    background: #2ab9c6;
+    left: 34%;
+    top: -30px;
+    transition: all 0.3s linear;
+}
+
+.label.best:before {
+    border-color: #2ab9c6 transparent transparent transparent;
+}
